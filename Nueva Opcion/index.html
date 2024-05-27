@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Gestión de contactos</title>
+</head>
+<body>
+
+    <div class="agregar">
+    <p class="titulo">Registro</p>
+    <input class="fName" id="firstName" type="text" placeholder="Nombre"> <!--Campo para el nombre-->
+    <input class="pNumbre" id="phoneNumber" type="text" placeholder="Apellido"> <!--Campo para el numero de telefono-->
+    <input class="lName" id="lastName" type="text" placeholder="Matricula"> <!--Campo para el apellido-->
+    
+    <button class="bAdd" id="agenda-btn">Agregar</button> <!--Boton para agregar contacto-->
+</div>
+   
+<!---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="acciones">
+        <p>Acciones</p>
+    <input class="search" id="searchLastName" type="text" placeholder="Buscar Matricula">
+    <button class="bSearch" id="search-btn">Buscar</button>
+    <button class="bMax" id="btnMaximo">Valor Maximo</button>
+    <button class="bMin" id="btnMinimo">Valor Minimo</button>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+    <div class="imprimir">
+    <p>Imprimir</p>
+    <button class="btnConsole" id="imprimir-btn">Imprimir Estudiantes en Consola</button>
+    <button class="btnOficial" id="btnPrint">Imprimir Estudiantes </button>
+    <div class="usuarios" id="userList"></div>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+
+    
+
+
+    <!------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--Penultima linea de body, porque nuestro js utilizara elementeos del index.html-->
+    <script type="module" src="./src/controllers/script.js"></script> <!--Contiene la logica para el manejo de contactos-->
+    <!--Esta en modo modular-->
+    
+</body>
+</html>
